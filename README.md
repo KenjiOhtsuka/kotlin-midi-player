@@ -1,5 +1,7 @@
 # Simple Kotlin Midi Player Library
 
+[![](https://jitpack.io/v/KenjiOhtsuka/kotlin-midi-player.svg)](https://jitpack.io/#KenjiOhtsuka/kotlin-midi-player)
+
 ## Usage
 
 ```
