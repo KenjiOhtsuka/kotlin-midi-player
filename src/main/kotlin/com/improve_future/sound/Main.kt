@@ -10,14 +10,8 @@ operator fun Synthesizer.invoke(block: Synthesizer.() -> Unit) {
 
 fun main(vararg args: String) {
     (MidiSystem.getSynthesizer()) {
-        //get and load default instrument and channel lists
-        //val instr: Array<Instrument> = defaultSoundbank.instruments;
-        val mChannels: Array<MidiChannel> = getChannels();
-
-        //midiSynth.loadInstrument(instr[0]);//load an instrument
-
         Player {
-            channel = mChannels[0]
+            channel = channels[0]
             tempo = Tempo.Grave
 
             arrayOf(
@@ -31,7 +25,7 @@ fun main(vararg args: String) {
         }
 
         Player {
-            channel = mChannels[0]
+            channel = channels[0]
             tempo = Tempo.Prestissimo
 
             p(Note.C4, Note.E4)
