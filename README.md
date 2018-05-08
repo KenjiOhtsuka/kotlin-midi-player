@@ -31,6 +31,19 @@
 }
 ```
 
+`Tempo` can be instantiated as follows
+
+* `Tempo(60.0)` : represents 60 bpm.
+* `Tempo(1000.0, Tempo.Unit.Millisecond)` : make quater note length 1000 milliseconds.
+
+
+`p(Note.C4)` means play C4 note, as quater note.
+
+`Note.C4 + 2` is `Note.D4`,
+`Note.E4 + 2` is `Note.F4`.
+
+`p(Chord.C)` means play C chord, as quater notes.
+
 ## Gradle
 
 ```

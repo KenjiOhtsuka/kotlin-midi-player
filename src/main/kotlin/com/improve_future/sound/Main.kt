@@ -10,6 +10,11 @@ operator fun Synthesizer.invoke(block: Synthesizer.() -> Unit) {
 
 fun main(vararg args: String) {
     (MidiSystem.getSynthesizer()) {
+        //get and load default instrument and channel lists
+        //val instr: Array<Instrument> = defaultSoundbank.instruments;
+
+        //midiSynth.loadInstrument(instr[0]);//load an instrument
+
         Player {
             channel = channels[0]
             tempo = Tempo.Grave

@@ -6,28 +6,31 @@ class Tempo(value: Number, type: Tempo.Unit = Tempo.Unit.Time) {
 
     companion object {
         /** 24 bpm */
-        val Larghissimo: Tempo by lazy {
-            Tempo(24)
-        }
+        val Larghissimo = Tempo(24)
         /** 28 bpm */
-        val Adagissimo by lazy {
-            Tempo(28)
-        }
-        /** 31 bpm */
-        val Sostenuto by lazy {
-            Tempo(31)
-        }
-        /** 35 bpm */
-        val Grave by lazy {
-            Tempo(35)
-        }
+        val Adagissimo = Tempo(28)
+        /** 31 bpm – sustained*/
+        val Sostenuto = Tempo(31)
+        /** 35 bpm - very slow*/
+        val Grave = Tempo(35)
+        /** 35 bpm – sustained */
+        /**
+         * 50 bpm
+         *
+         * broadly
+         * Usually, 40–60 bpm
+         */
+        val Largo = Tempo(50)
+        /**
+         * 52 bpm
+         *
+         * slowly
+         * usually, 45–60 bpm
+         */
+        val Lento = Tempo(52)
         /**
          * ToDo: Add Tempos
          *
-                Sostenuto – sustained
-            Grave – very slow (25–45 bpm)
-            Largo – broadly (40–60 bpm)
-            Lento – slowly (45–60 bpm)
             Larghetto – rather broadly (60–66 bpm)
             Adagio – slowly with great expression[8] (66–76 bpm)
             Adagietto – slower than andante (72–76 bpm) or slightly faster than adagio (70–80 bpm)
@@ -46,13 +49,21 @@ class Tempo(value: Number, type: Tempo.Unit = Tempo.Unit.Time) {
             Vivace – lively and fast (156–176 bpm)
             Vivacissimo – very fast and lively (172–176 bpm)
             Allegrissimo or Allegro vivace – very fast (172–176 bpm)
-            Presto – very, very fast (168–200 bpm)
-            Prestissimo – even faster than presto (200 bpm and over)
          */
-        /** 210 bpm */
-        val Prestissimo by lazy {
-            Tempo(210)
-        }
+        /**
+         * 181 bpm
+         *
+         * very, very fast
+         * Usually, 168–200 bpm
+         */
+        val Presto = Tempo(181)
+        /**
+         * 210 bpm
+         *
+         * Even faster than presto
+         * Usually, 200 bpm and over
+         */
+        val Prestissimo = Tempo(210)
     }
 
     init {
