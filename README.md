@@ -51,6 +51,6 @@ repositories {
   maven { url 'https://jitpack.io' }
 }
 dependencies {
-  compile 'com.github.KenjiOhtsuka:kotlin-midi-player:0.0.1'
+  compile 'com.github.KenjiOhtsuka:kotlin-midi-player:0.0.2'
 }
 ```
