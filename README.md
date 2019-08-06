@@ -44,6 +44,8 @@
 
 `p(Chord.C)` means play C chord, as quater notes.
 
+For more detail, please look at [Kotlin Midi Player Sample](https://github.com/KenjiOhtsuka/kotlin-midi-player-sample/blob/master/src/main/kotlin/com/improve_future/midi_sample/Main.kt)
+
 ## Gradle
 
 ```
